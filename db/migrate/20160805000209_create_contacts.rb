@@ -5,8 +5,8 @@ class CreateContacts < ActiveRecord::Migration
       t.string :last_name
       t.string :email
       t.string :phone
-      t.string :service
-      t.date :date
+      t.string :met_on_social_platform
+      t.date :date_met
       t.string :availability
       t.integer :skillset
       t.text :notes

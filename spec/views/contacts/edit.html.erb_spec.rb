@@ -7,7 +7,7 @@ RSpec.describe "contacts/edit", type: :view do
       :last_name => "MyString",
       :email => "MyString",
       :phone => "MyString",
-      :service => "MyString",
+      :met_on_social_platform => "MyString",
       :availability => "MyString",
       :skillset => 1,
       :notes => "MyText"

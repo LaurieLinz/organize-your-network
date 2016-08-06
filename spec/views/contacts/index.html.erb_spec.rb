@@ -8,7 +8,7 @@ RSpec.describe "contacts/index", type: :view do
         :last_name => "Last Name",
         :email => "Email",
         :phone => "Phone",
-        :service => "Service",
+        :met_on_social_platform => "Met on Social Platform",
         :availability => "Availability",
         :skillset => 2,
         :notes => "MyText"
@@ -18,7 +18,7 @@ RSpec.describe "contacts/index", type: :view do
         :last_name => "Last Name",
         :email => "Email",
         :phone => "Phone",
-        :service => "Service",
+        :met_on_social_platform => "Met on Social Platform",
         :availability => "Availability",
         :skillset => 2,
         :notes => "MyText"

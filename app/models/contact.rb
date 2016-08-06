@@ -1,3 +1,3 @@
 class Contact < ActiveRecord::Base
-  enum skillset: [:junior, :mid, :expert, :over ]
+  enum skillset: [:junior, :mid, :expert, :overconfident ]
 end
