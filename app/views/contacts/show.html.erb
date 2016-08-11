@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @contact.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @contact.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @contact.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @contact.phone %>
+</p>
+
+<p>
+  <strong>Met on social platform:</strong>
+  <%= @contact.met_on_social_platform %>
+</p>
+
+<p>
+  <strong>Date Met:</strong>
+  <%= @contact.date_met %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @contact.availability %>
+</p>
+
+<p>
+  <strong>Skillset:</strong>
+  <%= @contact.skillset %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @contact.notes %>
+</p>
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>
