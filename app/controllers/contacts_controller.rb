@@ -1,5 +1,6 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
+  # params.permit(:last_name, expertise_ids:[])
 
   # GET /contacts
   # GET /contacts.json
