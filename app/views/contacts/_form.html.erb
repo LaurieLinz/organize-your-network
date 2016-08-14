@@ -47,6 +47,16 @@
     <%= f.label :notes %><br>
     <%= f.text_area :notes %>
   </div>
+  <div class="field">
+    <%= f.label "Area of Expertise" %><br />
+    <%= f.collection_check_boxes :expertise_ids, Expertise.all, :id, :discipline do |b| %>
+      <div class="collection-check-box">
+        <%= b.check_box %>
+        <%= b.label %>
+      </div>
+    <% end %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
