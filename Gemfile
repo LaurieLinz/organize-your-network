@@ -41,6 +41,10 @@ group :development, :test do
   gem 'guard-bundler'
   gem 'guard-rspec'
   gem 'launchy'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'shoulda-matchers'
+  gem 'faker'
 end
 
 group :development do
