@@ -11,8 +11,8 @@ feature 'Creating Contact' do
     fill_in 'Phone', with: '555-111-2222'
     fill_in 'Met on social platform', with: 'slack'
     fill_in 'Availability', with: 'Full Time'
-    fill_in 'Availability', with: 'Full Time'
-    fill_in 'Skillset', with: 'overconfident'
+    select :junior, :from => "contact_skillset"
+
     click_button 'Create Contact'
 
   end

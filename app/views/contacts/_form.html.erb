@@ -40,8 +40,8 @@
     <%= f.text_field :availability %>
   </div>
   <div class="field">
-    <%= f.label :skillset %> 1 for junior, 2 for mid-level, 3 for expert 4 for overconfident! <br>
-    <%= f.number_field :skillset %>
+    <%= f.label :skillset %> <br>
+    <%= f.select :skillset, options_for_select(Contact.skillsets.keys, @contact.skillset) %>
   </div>
   <div class="field">
     <%= f.label :notes %><br>
