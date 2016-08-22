@@ -27,11 +27,11 @@ RSpec.describe "contacts/edit", type: :view do
 
       assert_select "input#contact_phone[name=?]", "contact[phone]"
 
-      assert_select "input#contact_service[name=?]", "contact[service]"
+      # assert_select "input#contact_service[name=?]", "contact[service]"
 
       assert_select "input#contact_availability[name=?]", "contact[availability]"
 
-      assert_select "input#contact_skillset[name=?]", "contact[skillset]"
+      # assert_select "input#contact_skillset[name=?]", "contact[skillset]"
 
       assert_select "textarea#contact_notes[name=?]", "contact[notes]"
     end
