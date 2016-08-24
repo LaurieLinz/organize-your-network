@@ -1,4 +1,4 @@
-<%= form_for(@contact) do |f| %>
+<%= bootstrap_form_for(@contact, layout: :inline) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
@@ -12,44 +12,34 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :first_name %><br>
     <%= f.text_field :first_name %>
   </div>
   <div class="field">
-    <%= f.label :last_name %><br>
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :phone %><br>
     <%= f.text_field :phone %>
   </div>
   <div class="field">
-    <%= f.label :met_on_social_platform %><br>
     <%= f.text_field :met_on_social_platform %>
   </div>
   <div class="field">
-    <%= f.label :date_met %><br>
     <%= f.date_select :date_met %>
   </div>
   <div class="field">
-    <%= f.label :availability %><br>
     <%= f.text_field :availability %>
   </div>
   <div class="field">
-    <%= f.label :skillset %> <br>
     <%= f.select :skillset, options_for_select(Contact.skillsets.keys, @contact.skillset) %>
   </div>
   <div class="field">
-    <%= f.label :notes %><br>
     <%= f.text_area :notes %>
   </div>
   <div class="field">
-    <%= f.label "Area of Expertise" %><br />
-    <%= f.collection_check_boxes :expertise_ids, Expertise.all, :id, :discipline do |b| %>
+    <%= f.collection_check_boxes :expertise_ids, Expertise.all, :id, :discipline, label: { text: "Area of Expertise" } do |b| %>
       <div class="collection-check-box">
         <%= b.check_box %>
         <%= b.label %>
