@@ -17,4 +17,6 @@
 
 .control-label {
   padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
 }
