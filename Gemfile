@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'bootstrap-generators'
+gem 'bootstrap_form'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
