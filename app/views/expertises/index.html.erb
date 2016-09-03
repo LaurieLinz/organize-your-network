@@ -19,7 +19,7 @@
 
     <tbody>
       <%= content_tag_for(:tr, @expertises) do |expertise| %>
-            <td><%= expertise.discipline %></td>
+            <td><%= expertise.discipline.capitalize %></td>
             <td><%= link_to 'Show', expertise %></td>
         <td><%= link_to 'Edit', edit_expertise_path(expertise) %></td>
         <td><%= link_to 'Destroy', expertise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
