@@ -45,5 +45,10 @@
   <%= @contact.notes %>
 </p>
 
+<p>
+  <strong>Expertise:</strong>
+  <%= @contact.expertises.map(&:discipline).join", " %>
+</p>
+
 <%= link_to 'Edit', edit_contact_path(@contact) %> |
 <%= link_to 'Back', contacts_path %>
