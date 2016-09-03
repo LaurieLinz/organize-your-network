@@ -18,6 +18,7 @@
       <th>Date met</th>
       <th>Availability</th>
       <th>Skillset</th>
+      <th>Expertise</th>
       <th>Notes</th>
     </tr>
   </thead>
@@ -33,10 +34,11 @@
         <td><%= contact.date_met %></td>
         <td><%= contact.availability %></td>
         <td><%= contact.skillset %></td>
+        <td><%= contact.expertises.map(&:discipline).join", " %></td>
         <td><%= contact.notes %></td>
         <td><%= link_to 'Show', contact %></td>
         <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-        <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

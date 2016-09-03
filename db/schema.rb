@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20160814174057) do
     t.string   "email"
     t.string   "phone"
     t.string   "met_on_social_platform"
-    t.date     "date_met",               null: false
+    t.date     "date_met"
     t.string   "availability"
     t.integer  "skillset",               null: false
     t.text     "notes"
