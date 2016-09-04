@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  *= require rails_bootstrap_forms
+
+
  */
 
 .control-label {
@@ -23,4 +25,29 @@
 
 .checkbox {
   padding-right: 1rem;
+}
+
+body {
+  background-color: #282c37;
+  color: #30A9DE;
+}
+
+.navbar {
+  background-color: #53565F;
+  border-bottom: hidden;
+}
+
+
+.navbar-inverse .navbar-brand {
+  color: #30A9DE;
+}
+
+a {
+  color: #30A9DE;
+  text-decoration: none;
+}
+
+table, th, td {
+  border: 1px !important;
+  padding: 10px;
 }
