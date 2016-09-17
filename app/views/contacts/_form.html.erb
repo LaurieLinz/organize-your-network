@@ -30,7 +30,7 @@
     <%= f.date_select :date_met %>
   </div>
   <div class="field">
-    <%= f.text_field :availability %>
+    <%= f.select :availability, options_for_select([['Full time', 1], ['Part Time > 30 hours', 2], ['Part Time < 30 hours', 3], ['Part Time < 10 hours', 4]]) %>
   </div>
   <div class="field">
     <%= f.select :skillset, options_for_select(Contact.skillsets.keys, @contact.skillset) %>
