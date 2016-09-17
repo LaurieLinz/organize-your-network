@@ -78,3 +78,12 @@ table, th, td {
 .btn-primary {
   color: #b2b2b2;
 }
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: #cccccc;
+  border-color: black;
+  color: black;
+}
