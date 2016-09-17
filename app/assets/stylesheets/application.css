@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  *= require rails_bootstrap_forms
+
+
  */
 
 .control-label {
@@ -23,4 +25,56 @@
 
 .checkbox {
   padding-right: 1rem;
+}
+
+body {
+  background-color: #212121;
+  color: #30A9DE;
+}
+
+.navbar {
+  background-color: background: rgba(18,18,18,1);
+  background: -moz-linear-gradient(-45deg, rgba(18,18,18,1) 0%, rgba(28,28,28,1) 9%, rgba(43,43,43,1) 24%, rgba(18,18,18,1) 40%, rgba(0,0,0,1) 49%, rgba(71,71,71,1) 61%, rgba(102,102,102,1) 75%, rgba(89,89,89,1) 88%, rgba(43,43,43,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(18,18,18,1)), color-stop(9%, rgba(28,28,28,1)), color-stop(24%, rgba(43,43,43,1)), color-stop(40%, rgba(18,18,18,1)), color-stop(49%, rgba(0,0,0,1)), color-stop(61%, rgba(71,71,71,1)), color-stop(75%, rgba(102,102,102,1)), color-stop(88%, rgba(89,89,89,1)), color-stop(100%, rgba(43,43,43,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(18,18,18,1) 0%, rgba(28,28,28,1) 9%, rgba(43,43,43,1) 24%, rgba(18,18,18,1) 40%, rgba(0,0,0,1) 49%, rgba(71,71,71,1) 61%, rgba(102,102,102,1) 75%, rgba(89,89,89,1) 88%, rgba(43,43,43,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(18,18,18,1) 0%, rgba(28,28,28,1) 9%, rgba(43,43,43,1) 24%, rgba(18,18,18,1) 40%, rgba(0,0,0,1) 49%, rgba(71,71,71,1) 61%, rgba(102,102,102,1) 75%, rgba(89,89,89,1) 88%, rgba(43,43,43,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(18,18,18,1) 0%, rgba(28,28,28,1) 9%, rgba(43,43,43,1) 24%, rgba(18,18,18,1) 40%, rgba(0,0,0,1) 49%, rgba(71,71,71,1) 61%, rgba(102,102,102,1) 75%, rgba(89,89,89,1) 88%, rgba(43,43,43,1) 100%);
+  background: linear-gradient(135deg, rgba(18,18,18,1) 0%, rgba(28,28,28,1) 9%, rgba(43,43,43,1) 24%, rgba(18,18,18,1) 40%, rgba(0,0,0,1) 49%, rgba(71,71,71,1) 61%, rgba(102,102,102,1) 75%, rgba(89,89,89,1) 88%, rgba(43,43,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121212', endColorstr='#2b2b2b', GradientType=1 );
+  border-bottom: hidden;
+}
+
+
+.navbar-inverse .navbar-brand {
+  color: #30A9DE;
+}
+
+a {
+  color: #30A9DE;
+  text-decoration: none;
+}
+
+table, th, td {
+  border: 1px !important;
+  padding: 10px;
+}
+
+.form-control {
+  background-color: rgba(89,89,89,1);
+  border: 1px solid rgba(89,89,89,1);
+  color: #30A9DE
+}
+
+.btn-default {
+  background-color: rgba(89,89,89,1);
+  border: 1px solid rgba(89,89,89,1);
+  color: #30A9DE;
+}
+
+.page-header {
+  border-bottom: 1px solid #30a9de;
+}
+
+.btn-primary {
+  color: #b2b2b2;
 }
