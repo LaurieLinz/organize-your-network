@@ -27,7 +27,7 @@
     <%= f.text_field :met_on_social_platform %>
   </div>
   <div class="field">
-    <%= f.date_select :date_met %>
+    <%= f.text_field :date_met, "data-provide" => 'datepicker' %>
   </div>
   <div class="field">
     <%= f.select :availability, options_for_select([['Full time', 1], ['Part Time > 30 hours', 2], ['Part Time < 30 hours', 3], ['Part Time < 10 hours', 4]]) %>
