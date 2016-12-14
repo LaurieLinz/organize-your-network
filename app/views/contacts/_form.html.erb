@@ -26,8 +26,15 @@
   <div class="field">
     <%= f.text_field :met_on_social_platform %>
   </div>
-  <div class="field">
-    <%= f.text_field :date_met, "data-provide" => 'datepicker' %>
+  <div class="field input-group.date">
+    <%= f.text_field :date_met, :class => 'input-group.date', "data-provide" => 'datepicker' %>
+
+     <script>
+      $('.input-group.date').datepicker({
+          format: "yyyy-mm-dd",
+          todayHighlight: true
+          });
+      </script>
   </div>
   <div class="field">
     <%= f.select :availability, options_for_select([['Full time', 1], ['Part Time > 30 hours', 2], ['Part Time < 30 hours', 3], ['Part Time < 10 hours', 4]]) %>
