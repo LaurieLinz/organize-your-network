@@ -87,3 +87,6 @@ input, button, select, textarea {
   border-color: black;
   color: black;
 }
+ .datepicker-days {
+   padding-left: 4.5em
+ }

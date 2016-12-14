@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bootstrap-generators'
 gem 'bootstrap_form'
+gem 'bootstrap-datepicker-rails'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
