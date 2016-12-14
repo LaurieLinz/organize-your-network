@@ -26,13 +26,11 @@
   <div class="field">
     <%= f.text_field :met_on_social_platform %>
   </div>
-  <div class="field input-group.date">
+  <div class="field date">
     <%= f.text_field :date_met, :class => 'input-group.date', "data-provide" => 'datepicker' %>
-
      <script>
-      $('.input-group.date').datepicker({
+      $('.date').datepicker({
           format: "yyyy-mm-dd",
-          todayHighlight: true
           });
       </script>
   </div>
