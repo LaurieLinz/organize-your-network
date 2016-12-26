@@ -2,19 +2,14 @@
 
 <h1>My Network</h1>
 
-<%= form_tag contacts_path, :method => 'get' do %>
-  <p>
-    <%= text_field_tag :search %>
-    <%= submit_tag "Search", :name => nil %>
-  </p>
+<%= form_tag contacts_path, method: 'get', class: 'form-inline' do %>
+  <div class="form-group">
+    <%= text_field_tag :search, '', {class: 'form-control'} %>
+    <%= submit_tag "Search", name: nil, class: 'btn btn-default' %>
+  </div>
 <% end %>
 
-<table>
-  <style>
-    table, th, td {
-      border: 1px solid black; padding: 10px;
-    }
-  </style>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>First name</th>
@@ -53,4 +48,4 @@
 
 <br>
 
-<%= link_to 'New Contact', new_contact_path %>
+<%= link_to 'New Contact', new_contact_path, class: 'btn btn-default' %>
