@@ -90,3 +90,8 @@ input, button, select, textarea {
  .datepicker-days {
    padding-left: 4.5em
  }
+
+ h4 {
+   color: #f7677f;
+   padding-left: .5em
+ }

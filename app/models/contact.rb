@@ -3,6 +3,6 @@ class Contact < ActiveRecord::Base
   has_and_belongs_to_many :expertises
 
   def self.search(search)
-    Contact.joins(:expertises).where("contacts.first_name || contacts.last_name ILIKE ? or expertises.discipline ILIKE ?", "%#{search}%", "%#{search}%").distinct
+    Contact.eager_load(:expertises).where("first_name ILIKE :search OR last_name ILIKE :search OR expertises.discipline ILIKE :search", search: "%#{search}%").distinct
   end
 end
